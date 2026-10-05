@@ -54,8 +54,8 @@ export default function LoadingScreen() {
               {/* Fish Body */}
               <path
                 d="M15 25 C 25 10, 55 10, 68 25 C 55 40, 25 40, 15 25 Z"
-                fill="#fca34d"
-                stroke="#fff"
+                fill="#38bdf8"
+                stroke="#0369a1"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -63,8 +63,8 @@ export default function LoadingScreen() {
               {/* Tail Fin */}
               <path
                 d="M15 25 L 2 13 C 6 22, 6 28, 2 37 Z"
-                fill="#ea580c"
-                stroke="#fff"
+                fill="#0284c7"
+                stroke="#0369a1"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -72,27 +72,27 @@ export default function LoadingScreen() {
               {/* Dorsal Fin */}
               <path
                 d="M38 14 C 44 6, 52 8, 54 13"
-                fill="#ea580c"
-                stroke="#fff"
+                fill="#0284c7"
+                stroke="#0369a1"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
               {/* Pectoral Fin */}
               <path
                 d="M42 27 C 36 34, 46 36, 48 30"
-                fill="#ea580c"
-                stroke="#fff"
+                fill="#0284c7"
+                stroke="#0369a1"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
               {/* Eye */}
               <circle cx="58" cy="22" r="3.5" fill="#ffffff" />
-              <circle cx="59.2" cy="22" r="2" fill="#1c1917" />
+              <circle cx="59.2" cy="22" r="2" fill="#0f172a" />
               <circle cx="60" cy="21.2" r="0.8" fill="#ffffff" />
               {/* Cute Smile */}
               <path
                 d="M62 27 Q 65 29 67 27"
-                stroke="#fff"
+                stroke="#0369a1"
                 strokeWidth="1.8"
                 strokeLinecap="round"
               />
