@@ -106,6 +106,9 @@ export default function AquariumStage({ children }) {
 
       <Canvas
         shadows
+        dpr={[1, 1.5]}
+        performance={{ min: 0.5 }}
+        gl={{ antialias: true, powerPreference: 'high-performance' }}
         camera={{ position: [0, 2.2, 12.0], fov: 45 }}
         onCreated={({ gl }) => {
           gl.shadowMap.enabled = true

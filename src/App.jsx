@@ -14,6 +14,7 @@ import JellyfishSchool from './components/Jellyfish'
 import HeroText from './components/HeroText'
 import StudyTable from './components/StudyTable'
 import HeroJellyfish from './components/HeroJellyfish'
+import LoadingScreen from './components/LoadingScreen'
 import './App.css'
 
 export default function App() {
@@ -123,6 +124,9 @@ export default function App() {
 
       {/* Hero text overlay — fades out on scroll */}
       <HeroText />
+
+      {/* Doodled animated loading progress screen */}
+      <LoadingScreen />
     </div>
   )
 }
