@@ -38,15 +38,6 @@ export default function LoadingScreen() {
   return (
     <div className={`doodle-loader-overlay ${isDone ? 'fade-out' : ''}`}>
       <div className="doodle-loader-card">
-        {/* User's Doodled Fish Artwork Banner */}
-        <div className="doodle-art-banner">
-          <img
-            src="/doodle_fish.png"
-            alt="Doodle Fish"
-            className="doodle-art-img"
-          />
-        </div>
-
         {/* Animated Swimming Doodled Fish Progress Track */}
         <div className="doodle-track-container">
           <div
