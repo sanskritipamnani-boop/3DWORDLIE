@@ -38,13 +38,22 @@ export default function LoadingScreen() {
   return (
     <div className={`doodle-loader-overlay ${isDone ? 'fade-out' : ''}`}>
       <div className="doodle-loader-card">
-        {/* Animated Swimming Doodled Fish */}
+        {/* User's Doodled Fish Artwork Banner */}
+        <div className="doodle-art-banner">
+          <img
+            src="/doodle_fish.png"
+            alt="Doodle Fish"
+            className="doodle-art-img"
+          />
+        </div>
+
+        {/* Animated Swimming Doodled Fish Progress Track */}
         <div className="doodle-track-container">
           <div
             className="doodle-fish-wrapper"
             style={{ left: `${Math.max(4, Math.min(94, currentPercent))}%` }}
           >
-            {/* Cute Doodled Swimming Fish SVG */}
+            {/* Cute Doodled Swimming Fish SVG matching doodle art */}
             <svg
               className="doodle-fish-svg"
               viewBox="0 0 80 50"
@@ -54,8 +63,8 @@ export default function LoadingScreen() {
               {/* Fish Body */}
               <path
                 d="M15 25 C 25 10, 55 10, 68 25 C 55 40, 25 40, 15 25 Z"
-                fill="#38bdf8"
-                stroke="#0369a1"
+                fill="#f97316"
+                stroke="#c2410c"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -63,49 +72,30 @@ export default function LoadingScreen() {
               {/* Tail Fin */}
               <path
                 d="M15 25 L 2 13 C 6 22, 6 28, 2 37 Z"
-                fill="#0284c7"
-                stroke="#0369a1"
+                fill="#ea580c"
+                stroke="#c2410c"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-              {/* Dorsal Fin */}
-              <path
-                d="M38 14 C 44 6, 52 8, 54 13"
-                fill="#0284c7"
-                stroke="#0369a1"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              {/* Pectoral Fin */}
-              <path
-                d="M42 27 C 36 34, 46 36, 48 30"
-                fill="#0284c7"
-                stroke="#0369a1"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
               {/* Eye */}
-              <circle cx="58" cy="22" r="3.5" fill="#ffffff" />
-              <circle cx="59.2" cy="22" r="2" fill="#0f172a" />
-              <circle cx="60" cy="21.2" r="0.8" fill="#ffffff" />
-              {/* Cute Smile */}
+              <circle cx="58" cy="22" r="3.2" fill="#0f172a" />
+              {/* Squiggly Scales */}
               <path
-                d="M62 27 Q 65 29 67 27"
-                stroke="#0369a1"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-              />
-              {/* Stripes */}
-              <path
-                d="M48 16 Q 44 25 48 34"
-                stroke="#ffffff"
-                strokeWidth="2.5"
+                d="M32 18 Q 36 21 32 25 Q 36 29 32 33"
+                stroke="#fde047"
+                strokeWidth="2.2"
                 strokeLinecap="round"
               />
               <path
-                d="M34 18 Q 30 25 34 32"
-                stroke="#ffffff"
+                d="M44 16 Q 48 21 44 25 Q 48 29 44 34"
+                stroke="#fde047"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M54 20 Q 57 23 54 26 Q 57 29 54 32"
+                stroke="#fde047"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
@@ -133,7 +123,7 @@ export default function LoadingScreen() {
           <span>{currentPercent}%</span>
         </div>
 
-        {/* Requested Custom Text */}
+        {/* Custom Text in Ocean Navy */}
         <h2 className="doodle-title">
           You have almost reached my world...
         </h2>

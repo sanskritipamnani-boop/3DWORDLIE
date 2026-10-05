@@ -181,12 +181,39 @@
 
 .doodle-loader-card {
   width: 90%;
-  max-width: 480px;
+  max-width: 520px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 32px 24px;
+  padding: 24px 20px;
+}
+
+.doodle-art-banner {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: doodleBannerFloat 3s ease-in-out infinite alternate;
+}
+
+.doodle-art-img {
+  width: 100%;
+  height: auto;
+  max-height: 140px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(14, 165, 233, 0.25));
+}
+
+@keyframes doodleBannerFloat {
+  0% {
+    transform: translateY(-4px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translateY(4px) rotate(0.5deg);
+  }
 }
 
 .doodle-track-container {
