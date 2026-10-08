@@ -101,8 +101,8 @@ function SceneLights() {
 export default function AquariumStage({ children }) {
   return (
     <>
-      {/* Leva panel — floats top-right, collapsible */}
-      <Leva collapsed={false} titleBar={{ title: '💡 Lighting Controls' }} />
+      {/* Leva panel — floats top-right, collapsed by default */}
+      <Leva collapsed={true} titleBar={{ title: '💡 Lighting Controls' }} />
 
       <Canvas
         shadows
